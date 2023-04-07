@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Projeto</h1>
+    
+    <label for="nameInput">Digite seu nome:</label>
+    <input type="text" id="nameInput">
+    <button onclick="addNameToList()">Adicionar à lista</button>
+
+    <ul id="myList">
+    </ul>
+    <!-- <h3>Digite o nome</h3> -->
+    <!-- <input type="text" id="name" placeholder="ex. joselito">
+    <h3>lista de nome</h3>
+    <div id="list-names">
+    </div>
+
+    <button onclick="addNameToList()">
+        Adicionar
+    </button> -->
+
+    <!-- <input type="text" id="number1">
+    <input type="text" id="number2">
+
+    <button onclick="multiply()">
+        *
+    </button>
+    <button onclick="division()">
+        /
+    </button>
+
+    <div id="result"> </div>
+    <br>
+    <button onclick="increment()">
+        Mais
+    </button>
+    <button onclick="decrement()">
+        Menos
+    </button>
+
+    <div id="increment">
+        0
+    </div> -->
+
+    <script>  
+        // Crie um array vazio
+        var myArray = [];
+
+        // Adicione itens ao array usando o método push
+        myArray.push("Item 1");
+        myArray.push("Item 2");
+        myArray.push("Item 3");
+
+        // Obtenha a referência para a lista
+        var myList = document.getElementById("myList");
+
+        // Percorra o array e adicione cada item à lista
+        for (var i = 0; i < myArray.length; i++) {
+        var listItem = document.createElement("li");
+        listItem.textContent = myArray[i];
+        myList.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>
