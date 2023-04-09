@@ -1,5 +1,9 @@
 require("dotenv").config()
-console.log(process.env.test)
+const {startdb, client} = require("./database")
+startdb()
+  .then(console.log)
+  .catch(console.error)
+  .finally(() => client.close());
 
 const express = require('express')
 const app = express()
