@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const {getTodos, postCadastro} = require("./controllers/controladores");
+
 router.get('/', (req, res)=> {
     res.send("CONTRUINDO UMA API DE CPF")
 })

@@ -52,7 +52,6 @@ const deleteTodo = async (req, res) => {
     }
     
 };
-
 const findOneTodo = async(req,res) => {
     try {
         const unicID = await Todo.findOne(
